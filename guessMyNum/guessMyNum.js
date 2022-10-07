@@ -1,7 +1,7 @@
 //create a program/game that picks a random number and then asks the player to guess the number
 //if the player is correct move on to the next round
 //if not then shame them and abort the program
-
+//hi github
 let readlineSync = require("readline-sync");
 
 let randomNum = Math.ceil(Math.random() * 3);
