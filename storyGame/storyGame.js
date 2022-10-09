@@ -29,10 +29,9 @@ console.log("")
 console.log(chalk.red("========================================================================= ") + chalk.bold.white.italic.underline("Welcome To storyGame.js") + chalk.red(" ========================================================================="))
 console.log("===========================================================================================================================================================================")
 console.log(chalk.redBright.bgRed("|                                                                                                                                                                         |"))
-// console.log(chalk.redBright.bgRed("|                                                                                                                                                                         |"))
 
 console.log(chalk.bgRed.bold("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------"))
 console.log(" ")
 console.log(chalk.red("========================================================================= ") + chalk.whiteBright.underline.bold("Are you ready to start?") + chalk.red(" ========================================================================="))
 
-let varStartTestyN = readlineSync.question(chalk.bold("                                                                                   [Y/N] "))
+let varStartTestyN = readlineSync.question(chalk.bold("                                                                                   [Y/N] ")).toUpperCase()
