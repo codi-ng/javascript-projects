@@ -3,7 +3,7 @@
 //test3
 let readlineSync = require("readline-sync")
 
-import chalk from '../node_modules/chalk/source'
+import chalk from 'chalk'
 
 let { setTimeout } = require("node:timers")
 
