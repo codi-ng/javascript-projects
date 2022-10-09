@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "chalk": "^5.1.0",
-    "enquirer": "^2.3.6",
     "readline-sync": "^1.4.10"
   },
   "type": "module"
