@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "chalk": "^5.1.0",
     "readline-sync": "^1.4.10"
   }
 }
