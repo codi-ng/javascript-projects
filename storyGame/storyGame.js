@@ -3,6 +3,17 @@
 //test3
 let readlineSync = require("readline-sync")
 
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+
+
 console.log("========================================================================= Welcome To storyGame.js ==============================================================")
 console.log(" ")
 
