@@ -1,6 +1,6 @@
 //create a game/program that is basically a story/RPG game
 //will probably be my biggest project yet
-//test4
+//test5
 
 import pkg from 'readline-sync';
 const { readlineSync } = pkg;
