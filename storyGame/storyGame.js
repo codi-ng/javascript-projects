@@ -18,18 +18,17 @@ import { read } from 'node:fs';
 
 const usrHelp = chalk.greenBright.underline("Hello, this is a help manual to help you get acquainted with how you play this story game and the different keywords, to exit the game entirely input 'fq'\n which stands for 'forcequit'")
 
-console.log("")
-console.log("")
-console.log("")
-console.log("")
-console.log("")
-console.log("")
-console.log("")
-console.log("")
-console.log("")
 
 // console.log(usrHelp);
 
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
+console.log("")
 console.log(chalk.red("======================================================================== ") + chalk.bold.white.italic.underline("Welcome To storyGame.js") + chalk.red(" ========================================================================="))
 console.log("==========================================================================================================================================================================")
 console.log(chalk.redBright.bgRed("|                                                                                                                                                                        |"))
