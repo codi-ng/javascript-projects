@@ -2,7 +2,9 @@
 //if the player is correct move on to the next round
 //if not then shame them and abort the program
 //hi github2
-let readlineSync = require("readline-sync");
+//let readlineSync = require("readline-sync");
+
+import readlineSync from 'readline-sync'
 
 let randomNum = Math.ceil(Math.random() * 3);
 
