@@ -6,9 +6,9 @@
 
 import readlineSync from 'readline-sync'
 
-let randomNum = Math.ceil(Math.random() * 3);
-
 let scoreKeeper = 0;
+
+let randomNum = Math.ceil(Math.random() * 3);
 
 console.log(
   "Welcome to Number Guesser!!! The game where I think of a number from 1-3 and as the name suggests, you try to guess it"

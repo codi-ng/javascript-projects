@@ -6,15 +6,15 @@
 
 import readlineSync from 'readline-sync'
 
-import exitCode from 'node:process'
 
-let scoreKeeper = 0;
+import exitCode from 'node:process'
 
 while (scoreKeeper >= 1){
  let randomNum = Math.ceil(Math.random() * 3);
 
 }
 
+let scoreKeeper = 0;
 
 console.log(
         "Welcome to Number Guesser!!! The game where I think of a number from 1-3 and as the name suggests, you try to guess it"
@@ -70,7 +70,6 @@ else if (typeof userInputStart === "string") {
     console.log(" ")
 
     let userInputStart2 = readlineSync.question("Input your guess: ")
-
     if(parseInt(userInputStart2) === randomNum){
         console.log("You guessed right!!")
         scoreKeeper++
@@ -82,7 +81,7 @@ else if (typeof userInputStart === "string") {
         scoreKeeper = 0
         console.log(`Your score is now ${scoreKeeper}, get better 😈`)
         process.exitCode = 0
-    
+
 };
 
 function startGameRound(){
