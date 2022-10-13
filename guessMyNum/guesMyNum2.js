@@ -79,8 +79,8 @@ else if (typeof userInputStart === "string") {
         console.log("WRONG!!!")
         scoreKeeper = 0
         console.log(`Your score is now ${scoreKeeper}, get better 😈`)
-        break;
-    }
+        return
+    
 };
 
 function startGameRound(){
