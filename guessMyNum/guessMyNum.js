@@ -6,37 +6,39 @@
 
 import readlineSync from 'readline-sync'
 
+import chalk from 'chalk'
+
 let scoreKeeper = 0;
 
 let randomNum = Math.ceil(Math.random() * 3);
 
 console.log(
-  "Welcome to Number Guesser!!! The game where I think of a number from 1-3 and as the name suggests, you try to guess it"
+  ("Welcome to Number Guesser!!! The game where I think of a number from 1-3 and as the name suggests, you try to guess it")
 );
 
-console.log("======================");
+console.log(("======================"));
 
 console.log(
-  "Whenever you choose right, you get to move on to the next round, the more rounds you win, the higher your score gets"
+  ("Whenever you choose right, you get to move on to the next round, the more rounds you win, the higher your score gets")
 );
 
 console.log("   ");
 console.log(
-  "If you miss at least ONE round, your counter goes back down to 0 and you lose the game."
+  ("If you miss at least ONE round, your counter goes back down to 0 and you lose the game.")
 );
 
-console.log(`Your current score is ${scoreKeeper}`);
-console.log("======================");
+console.log((`Your current score is ${scoreKeeper}`));
+console.log(("======================"));
 
 console.log(
-  "Now without further ado, let's start! I will pick a number in 3, 2, 1 "
+  ("Now without further ado, let's start! I will pick a number in 3, 2, 1 ")
 );
 console.log(
-  "(This countdown is very unnecesary as I already pick the number when you run this program)"
+( "(This countdown is very unnecesary and meant to waste your time as I already pick the number when you run this program)")
 );
 
-console.log("======================");
-console.log("Guess!");
+console.log(("======================"));
+console.log(("Guess!"));
 let userInputStart = readlineSync.question("Input your guess: ");
 
 if(parseInt(userInputStart) === 1 || parseInt(userInputStart) === 2 || parseInt(userInputStart) === 3){
