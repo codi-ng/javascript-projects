@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "chalk": "^5.1.0",
-    "chalk-animation": "^2.0.3",
     "readline-sync": "^1.4.10"
   },
   "type": "module"

@@ -6,7 +6,6 @@ import exit from 'node:process'
 
 import chalk from 'chalk'
 
-import chalkAnimation from 'chalk-animation';
 
 import { setTimeout } from 'node:timers/promises'
 
@@ -14,4 +13,4 @@ let score = 0;
 
 let randomNum = Math.ceil(Math.random() * 3)
 
-chalkAnimation.rainbow('Lorem ipsum dolor sit amet');
+// chalkAnimation.rainbow('Lorem ipsum dolor sit amet');
