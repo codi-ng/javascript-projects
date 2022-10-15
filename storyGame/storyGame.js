@@ -8,6 +8,8 @@ const  readlineSync  = pkg;
 
 import chalk from 'chalk'
 
+import stdout from 'node:process'
+
 import { setTimeout } from 'node:timers'
 
 import { exit } from 'node:process'
