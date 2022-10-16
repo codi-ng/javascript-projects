@@ -1,5 +1,7 @@
-test.lua
-test.py
 randomTests/randomTest.js
 .gitignore
-test.go
+other/test.go
+other/test.lua
+other/test.py
+other/test.rs
+other/README.md

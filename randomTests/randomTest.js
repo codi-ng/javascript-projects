@@ -19,6 +19,7 @@ import { setTimeout } from 'node:timers'
 import  chalk  from 'chalk'
 import { read } from 'node:fs';
 import { type } from 'node:os';
+import { get } from 'node:http';
 
 // function sayHelloWorld(param1 = 'Hello World'){
 //     for(let i = 0; i < 69; i++){
@@ -134,7 +135,7 @@ import { type } from 'node:os';
 //     console.log('Answer:', answers.reptile);
 //   });   
 
-console.log("test")
+// console.log("test")
 
 // inquirer.prompt([
 //     {
@@ -148,6 +149,27 @@ console.log("test")
 // .then(answer => console.log('You chose the: ', answer.choose))
 
 
-let foobar = ['foo', 'bar', 'baz']
+// let foobar = ['foo', 'bar', 'baz']
 
-readlineSync.keyInSelect(foobar, "pick one")
+// // readlineSync.keyInSelect(foobar, "pick one")
+
+
+// function getFizzBuzz(n){
+//     if(n % 3 === 0){
+//         console.log('Fizz')
+//         return 'Fizz'
+//     }
+//     else if(n % 5 === 0){
+//         console.log('Buzz')
+//         return 'Buzz'
+//     }
+//     else if(n % 3 === 0 && n % 5 === 0){
+//         console.log('FizzBuzz')
+//         return 'FizzBuzz'
+//     }else{
+//         console.log(n)
+//         return n
+//     }
+// }
+
+// getFizzBuzz(3)
