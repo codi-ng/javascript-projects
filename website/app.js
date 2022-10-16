@@ -1,25 +1,25 @@
-let h1 = document.querySelector('h1')
+// let h1 = document.querySelector('h1')
 
-let functest = h1.addEventListener('click', function(){
-    let randomNum = Math.ceil(Math.random()* 3)
+// let functest = h1.addEventListener('click', function(){
+//     let randomNum = Math.ceil(Math.random()* 3)
 
-    switch(randomNum){
-        case 1:
-            randomNum = 'red'
-            break;
-        case 2:
-            randomNum = 'blue'
-            break;
-        case 3:
-            randomNum = 'pink'
-            break
-    }
+//     switch(randomNum){
+//         case 1:
+//             randomNum = 'red'
+//             break;
+//         case 2:
+//             randomNum = 'blue'
+//             break;
+//         case 3:
+//             randomNum = 'pink'
+//             break
+//     }
 
-    console.log("I've been clicked!")
+//     console.log("I've been clicked!")
     
-    h1.style.color = randomNum
+//     h1.style.color = randomNum
 
-})
+// })
 
 let body = document.body
 
