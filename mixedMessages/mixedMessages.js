@@ -19,7 +19,7 @@ let msg5 = "Code is like humor. When you have to explain it, it's bad. - Cory Ho
 
 let msg6 = "JavaScript is the world's most misunderstood programming language. - Douglas Crockford";
 
-let msg7 = "JavaScript is the only language that I am aware of that people feel they don't need to learn before they start using it. - Douglas Crockford"
+let msg7 = "C Makes It Easy to Shoot Yourself in the Foot; C++ Makes It Harder but When You Do It'll Blow Your Whole Leg Off - Bjarne Stroustrup "
 
 let randomNumChoose = Math.ceil(Math.random() * 7)
 
