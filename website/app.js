@@ -38,7 +38,8 @@ body.onclick = function changeColor(){
             break;
 
     }
-
+    
+    console.log("I've been clicked!")
     body.style.backgroundColor = randomNum2
 }
 
