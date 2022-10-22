@@ -31,6 +31,9 @@ if(startConv == 2){
     startKelv()
 };
 
+if(startConv == 3){
+    startRan()
+};
 
 function startKelv(){
     let kelvOpts = ['Fahrenheit to Kelvin', 'Celsius to Kelvin']
@@ -89,3 +92,6 @@ function startCels(){
     }
 };
 
+function startRan(){
+    
+}
