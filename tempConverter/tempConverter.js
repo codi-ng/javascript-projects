@@ -10,7 +10,7 @@ import chalk from 'chalk'
 
 
 
-let tempOptions = ['Fahrenheit', 'Celsius', 'Kelvin']
+let tempOptions = ['Fahrenheit', 'Celsius', 'Kelvin', 'Rankine']
 
 
 let startConv = readlineSync.keyInSelect(tempOptions, "Choose which temperature type to convert to.")
@@ -93,5 +93,5 @@ function startCels(){
 };
 
 function startRan(){
-    
+    console.log("Foo/bar")
 }
