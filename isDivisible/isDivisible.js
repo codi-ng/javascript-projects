@@ -2,29 +2,21 @@
 //Nano test
 //Github test
 
-let readlineSync = require('readline-sync')
+import readlineSync from 'readline-sync'
+import chalk from 'chalk'
+
+let isDivisible = () =>{
+  let usrInput = readlineSync.questionInt("Input number: ")
 
 
-let isDivisible = (i) => {
-  
-  let i = parseInt(readlineSync.question('Input number: '))
-   
-
-  if (i % 2 == 0) {
-    console.log("This number is divisible by 2!");
+  if(usrInput % 2 == 0){
+    console.log(chalk.greenBright.italic.bold("This number is divisible by 2!"))
   }
-  // if(typeof i !== 'number'){
-  //   console.log("This is not a number.")
-  // }
-  else if (i % 2 !== 0) {
-    console.log("This number is not divisible by 2!");
+
+  if(usrInput % 2 !== 0){
+    console.log(chalk.greenBright.italic.bold("This number is not divisible by 2!"))
   }
-  
-};
+}
 
 
-console.log(i)
-
-
-
-//console.log('test')
+isDivisible();

@@ -24,7 +24,7 @@
 let body = document.body
 
 body.onclick = function changeColor(){
-    let randomNum2 = Math.ceil(Math.random()* 3)
+    let randomNum2 = Math.ceil(Math.random()* 6)
 
     switch(randomNum2){
         case 1:
@@ -36,7 +36,15 @@ body.onclick = function changeColor(){
         case 3:
             randomNum2 = 'green'
             break;
-
+        case 4:
+            randomNum2 = 'yellow'
+            break;
+        case 5:
+            randomNum2 = 'purple'
+            break;
+        case 6:
+            randomNum2 = 'pink'
+            break;
     }
     
     console.log("I've been clicked!")
