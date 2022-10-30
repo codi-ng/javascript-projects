@@ -5,9 +5,9 @@ let customGreet = (i) =>{
 
     console.log(`Oh, Hello ${i}`)
 
-    let j = readlineSync.question('How are you doing today? ')
+    let j = readlineSync.question('How are you doing today? ').toLowerCase()
     
-    if(j === 'good' || j === 'Good' || j === 'good.' || j === 'Good.'){
+    if(j){
         console.log(`I'm happy you're doing well today `)
     }
 
