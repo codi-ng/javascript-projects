@@ -15,7 +15,7 @@ let startBen;
 
 let invisibleScore = 0;
 
-process.stdout.write(chalk.yellow.italic("Call ben? ")); startBen = readlineSync.keyInYNStrict("")
+process.stdout.write(chalk.yellow.italic("Call ben? ")); startBen = readlineSync.keyInYNStrict(" ")
 
 
 switch(benChoose){
