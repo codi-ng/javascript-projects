@@ -14,7 +14,7 @@ let secondNum = readlineSync.questionInt(`${chalk.blue("Input the second second 
 
 function calcPercent(){
     //console.log(`${firstNum} percent of ${secondNum} is ${Math.round((firstNum/100) * secondNum/1 )}%`);
-    let result = firstNum/secondNum * 100
+    let result = firstNum/secondNum * 100;
     console.log(chalk.blue.bold(`${firstNum} percent of ${secondNum} is ${chalk.green.bold(result.toFixed(2) + "%")}`));
 }
 
