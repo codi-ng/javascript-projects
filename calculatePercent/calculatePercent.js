@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync'
 import chalk from 'chalk'
-import process from 'node:process'
 
 
 
