@@ -31,7 +31,7 @@ console.log("")
 console.log("")
 console.log("")
 console.log("")
-console.log(chalk.red("======================================================================== ") + chalk.bold.white.italic.underline("Welcome To storyGame.js") + chalk.red(" ========================================================================="))
+console.log(chalk.red("======================================================================== ") + chalk.bold.white.italic.underline("Welcome To Hangry!") + chalk.red(" ========================================================================="))
 console.log("==========================================================================================================================================================================")
 console.log(chalk.redBright.bgRed("|                                                                                                                                                                        |"))
 
@@ -41,4 +41,24 @@ console.log(chalk.red("=========================================================
 
 let varStartTestyN = readlineSync.keyInYNStrict(chalk.white("                                                                                  "))
 
+
+if(varStartTestyN === true){
+    startGame()
+}
+
+
+let firstPathChoice = ['Left', 'Right']
+
+let firstPathChose;
+
+
+function startGame(){
+    setTimeout(() => {console.log(chalk.greenBright.bold("You wake up, it's 7 AM and you're as hungry as a bear, you decide to go eat some bread since it's the only thing you have left. When you reach the kitchen you come to find out, there is no bread 😱! "))
+
+                    
+
+}, 2000)
+
+
+}
 
