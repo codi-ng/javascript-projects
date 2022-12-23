@@ -3,5 +3,9 @@
     "chalk": "^5.1.0",
     "readline-sync": "^1.4.10"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@types/readline-sync": "^1.4.4"
+  }
 }
