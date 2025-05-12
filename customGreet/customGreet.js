@@ -1,6 +1,8 @@
 let readlineSync = require('readline-sync')
 
 //aa
+
+console.log("Testing");
 let customGreet = (i) =>{
     i = readlineSync.question('Who are you? ')
 
