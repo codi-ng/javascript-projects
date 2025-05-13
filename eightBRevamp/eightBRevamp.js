@@ -1,7 +1,8 @@
 //create a program like eightB.js but with CLI. Hopefully it is fun......
 //
 
-let readlineSync = require("readline-sync");
+// let readlineSync = require("readline-sync");
+import readlineSync from 'readline-sync';
 
 console.log(
   "Welcome to the magic Eight Ball! I will tell you your future! Just ask and I will answer."
