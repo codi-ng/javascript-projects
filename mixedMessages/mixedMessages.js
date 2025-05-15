@@ -1,4 +1,5 @@
 //make a program that returns a random message when a user runs
+//test
 
 
 import readlineSync from 'readline-sync'
