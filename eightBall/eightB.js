@@ -1,4 +1,5 @@
 const eightBallfunc = () =>{
+    //Useless
     
     let randomNumber = Math.ceil(Math.random() * 8)
     let eightBall = randomNumber
