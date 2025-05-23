@@ -71,7 +71,7 @@ function mainGame(){
 			if (this.weapon === 'battle axe' || this.weapon === 'greatsword'){
 				goblin.health -= 25;
 				goblin.takeDamage();
-				console.log(chalk.yellowBright.bold(`${this.name} attacks goblin! ${chalk.blueBright.bold('(-15 health)')}`))
+				console.log(chalk.yellowBright.bold(`${this.name} attacks goblin! ${chalk.blueBright.bold('(-25 health)')}`))
 				goblin.enemyDies();
 				console.log(chalk.yellowBright.bold(`Good job ${this.name}! You defeated the ${goblin.ability} goblin! Replenish your health or stamina before your next adventure!`));
 				console.log(chalk.blueBright.bold('_____________________________________________'));
