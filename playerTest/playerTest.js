@@ -21,7 +21,7 @@ EntityActions.prototype.takeDamage = function(){
 	}
 }
 // * constructors for both player and enemy. these are expected to be used with the `new` keyword
-function PlayerMaker(name, ability, weapon){
+function PlayerMaker(name = 'John Doe', ability = 'Ice', weapon= 'Stick'){
 	if(!new.target){
 		throw Error('You must use the new keyword for this constructor!!!');
 	}
