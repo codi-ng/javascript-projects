@@ -16,7 +16,7 @@ import { exit } from 'node:process'
 
 import { read } from 'node:fs';
 
-
+//*TO BE REVISITED AND FINISHED
 
 const usrHelp = chalk.greenBright.underline("Hello, this is a help manual to help you get acquainted with how you play this story game and the different keywords, to exit the game entirely input 'fq'\n which stands for 'forcequit'")
 
