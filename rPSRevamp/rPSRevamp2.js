@@ -3,8 +3,6 @@ import readlineSync from 'readline-sync'
 
 import chalk  from 'chalk'
 
-import exit, { exitCode } from 'node:process'
-
 let computerChoice = Math.ceil(Math.random()* 3)
 
 let score = 0;
@@ -203,9 +201,6 @@ switch(startGame2){
         console.log(chalk.cyan("HAHA! I TOLD YOU I WAS REALLY GOOD AT THIS GAME 😈"))
 
         break;
-        
-        exitCode = 0;
-        process.exit(0)
     }
     
 }

@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync'
-import exit from 'node:process'
 import chalk from 'chalk'
 
 

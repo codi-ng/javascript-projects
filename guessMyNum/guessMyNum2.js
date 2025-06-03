@@ -3,7 +3,6 @@
 //*TO BE REVISITED AND FINISHED
 
 
-import exit from 'node:process'
 import prompt from 'synchro-prompt';
 import chalk from 'chalk';
 
@@ -23,7 +22,6 @@ let randomNumsArr = [1,2,3,4,5,6];
 let chosenNum = chooseRandom(randomNumsArr);
 
 let score = 0;
-let triesLeft = 3;
 let userName = prompt('Enter your username! ');
 console.log(`Hello ${userName}!`);
 let  answer = prompt('Guess the number! ');
@@ -37,7 +35,6 @@ if(isNaN(answer)){
 else if(answer === chosenNum){
     score++
     console.log(`You chose right! Your score is now ${score}`);
-    triesLeft = 3;
 }
 
 

@@ -6,14 +6,12 @@ import chalk from 'chalk'
 
 import process from 'node:process'
 
-import stdout from 'node:process'
 
 
 let benChoose = Math.ceil(Math.random() * 4)
 
-let startBen;
 
-let invisibleScore = 0;
+let startBen;
 
 process.stdout.write(chalk.yellow.italic("Call ben? ")); startBen = readlineSync.keyInYNStrict(" ")
 
@@ -33,8 +31,8 @@ switch(benChoose){
         break;
 }
 
-//function startGame(){
-    let usrInput = readlineSync.question("Ask ben a question: ")
+function startGame(){
+    readlineSync.question("Ask ben a question: ")
 
 
     if( startBen === true){
@@ -43,13 +41,9 @@ switch(benChoose){
     else{
     process.exitCode = 0
     }
+}
 
-    if(usrInput.includes(" ")){
-        invisibleScore++
-    }
-//}
-
-// startGame();
+startGame();
 
 
 // while (invisibleScore >= 1){

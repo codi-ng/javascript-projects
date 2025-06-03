@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync'
 import chalk from 'chalk'
-import exit from 'node:process'
 
 // ? IDEAS FOR FUTURE REVAMPS
 // ? Leaderboard saved to a file using fs.

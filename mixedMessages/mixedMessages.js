@@ -6,8 +6,6 @@ import readlineSync from 'readline-sync'
 
 import chalk from 'chalk';
 
-import exitCode from 'node:process'
-
 let msg1 = "Programming isn't about what you know; it's about what you can figure out." + "- Chris Pine";
 
 let msg2 = "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." + "– Martin Fowler";

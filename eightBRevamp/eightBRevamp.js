@@ -140,7 +140,7 @@ function restartGame() {
 
   console.log("  ");
 
-  let restart = readlineSync.question("What is your question? ");
+  readlineSync.question("What is your question? ");
 
   if (startGame.includes("?")) {
     startGameFunc();

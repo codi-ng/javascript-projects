@@ -6,8 +6,6 @@
 
 import readlineSync from 'readline-sync'
 
-import chalk from 'chalk'
-
 let scoreKeeper = 0;
 
 let randomNum = Math.ceil(Math.random() * 3);

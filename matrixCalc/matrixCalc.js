@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
 import chalk from 'chalk';
-import { exit } from 'process';
 
 //*TO BE REVISITED AND FINISHED
 
@@ -124,10 +123,11 @@ while(usrCalcChoice){
             createMat(usrMat2);
             addMats(usrMat, usrMat2);
         break;
-        case 4:
+        case 4: {
             let scalarNum = readlineSync.questionInt(chalk.greenBright.bold('Enter the constant: '));
             console.log(chalk.greenBright.bold('The scalar matrix is: '));
             matScalar(usrMat, scalarNum).forEach(i => console.log(chalk.magentaBright.bold(i + '\n')));
+        }
         break;
         case 5:
             process.exit(0);
