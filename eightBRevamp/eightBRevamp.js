@@ -2,10 +2,10 @@
 //
 
 // let readlineSync = require("readline-sync");
-import readlineSync from 'readline-sync';
+import readlineSync from "readline-sync";
 
 console.log(
-  "Welcome to the magic Eight Ball! I will tell you your future! Just ask and I will answer."
+  "Welcome to the magic Eight Ball! I will tell you your future! Just ask and I will answer.",
 );
 
 console.log("==============================================");
@@ -115,10 +115,10 @@ function getRestartGameDec() {
 getRestartGameDec();
 
 function restartGame() {
-  let restartGameQues = readlineSync.question("Would you like to ask again? ").toLowerCase();
-  console.log("  ")
-
-    
+  let restartGameQues = readlineSync
+    .question("Would you like to ask again? ")
+    .toLowerCase();
+  console.log("  ");
 
   if (restartGameQues === "yes") {
     console.log("  ");

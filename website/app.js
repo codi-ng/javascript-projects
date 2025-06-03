@@ -16,41 +16,40 @@
 //     }
 
 //     console.log("I've been clicked!")
-    
+
 //     h1.style.color = randomNum
 
 // })
 
-let body = document.body
+let body = document.body;
 
-body.onclick = function changeColor(){
-    let randomNum2 = Math.ceil(Math.random()* 6)
+body.onclick = function changeColor() {
+  let randomNum2 = Math.ceil(Math.random() * 6);
 
-    switch(randomNum2){
-        case 1:
-            randomNum2 = 'red'
-            break;
-        case 2:
-            randomNum2 = 'blue'
-            break;
-        case 3:
-            randomNum2 = 'green'
-            break;
-        case 4:
-            randomNum2 = 'yellow'
-            break;
-        case 5:
-            randomNum2 = 'purple'
-            break;
-        case 6:
-            randomNum2 = 'pink'
-            break;
-    }
-    
-    console.log("I've been clicked!")
-    body.style.backgroundColor = randomNum2
-}
+  switch (randomNum2) {
+    case 1:
+      randomNum2 = "red";
+      break;
+    case 2:
+      randomNum2 = "blue";
+      break;
+    case 3:
+      randomNum2 = "green";
+      break;
+    case 4:
+      randomNum2 = "yellow";
+      break;
+    case 5:
+      randomNum2 = "purple";
+      break;
+    case 6:
+      randomNum2 = "pink";
+      break;
+  }
 
+  console.log("I've been clicked!");
+  body.style.backgroundColor = randomNum2;
+};
 
 // if(body.backgroundColor === h1.backgroundColor){
 //     console.log("Same color!")

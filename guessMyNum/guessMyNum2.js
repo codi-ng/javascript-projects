@@ -2,45 +2,32 @@
 
 //*TO BE REVISITED AND FINISHED
 
+import prompt from "synchro-prompt";
+import chalk from "chalk";
 
-import prompt from 'synchro-prompt';
-import chalk from 'chalk';
-
-
-prompt({ 
-  color: 'green',
-  transform: function(input) {
+prompt({
+  color: "green",
+  transform: function (input) {
     return input.trim().toLowerCase();
-  }
+  },
 });
 
-
-function chooseRandom(arr){
-    return arr[Math.floor(Math.random()*arr.length)];
+function chooseRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
 }
-let randomNumsArr = [1,2,3,4,5,6];
+let randomNumsArr = [1, 2, 3, 4, 5, 6];
 let chosenNum = chooseRandom(randomNumsArr);
 
 let score = 0;
-let userName = prompt('Enter your username! ');
+let userName = prompt("Enter your username! ");
 console.log(`Hello ${userName}!`);
-let  answer = prompt('Guess the number! ');
+let answer = prompt("Guess the number! ");
 answer = parseInt(answer);
 
-if(isNaN(answer)){
-    console.log(chalk.red.bold('Not a number! Disqualified'));
-    process.exit(1);
+if (isNaN(answer)) {
+  console.log(chalk.red.bold("Not a number! Disqualified"));
+  process.exit(1);
+} else if (answer === chosenNum) {
+  score++;
+  console.log(`You chose right! Your score is now ${score}`);
 }
-
-else if(answer === chosenNum){
-    score++
-    console.log(`You chose right! Your score is now ${score}`);
-}
-
-
-
-
-
-
-
-

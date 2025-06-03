@@ -7,9 +7,7 @@
 
 // // console.log(computerChoice);
 
-
 // //const getcomputerChoice = (/*_param1 */) =>{
-    
 
 //     switch(computerChoice){
 //         case computerChoice === 0:
@@ -36,12 +34,9 @@
 //     }
 // //};
 
-
 // // getcomputerChoice();
 
-
 // // readlineSync.question('Hello')
-
 
 //FIXXXXXXX!! ^
 //FIXXXXXXX!! ^
