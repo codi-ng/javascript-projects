@@ -11,14 +11,20 @@ function displayMeaning(data) {
   meaningParagraph.textContent = `Meaning: ${data[0].meanings[0].definitions[0].definition}`;
   inputVal.value = null;
 
-  if (data[0].phonetic)
-    soundsLike.textContent = `It sounds like: ${data[0].phonetic}`;
-  else if (!data.phonetic || !Array.isArray(data[0].phonetics)) {
-    soundsLike.textContent = "No phonetics found!";
-  } else if (Array.isArray(data[0].phonetics)) {
-    const phonetic = data[0].phonetics.find((p) => p.text);
-    soundsLike.textContent = `It sounds like: ${phonetic.text}`;
-  }
+  if (data[0].phonetic){ 
+        return soundsLike.textContent = `It sounds like: ${data[0].phonetic}`
+    }
+
+  else if (Array.isArray(data[0].phonetics)) {
+      const phonetic = data[0].phonetics.find((p) => p.text);
+    if(phonetic){
+        return soundsLike.textContent = `It sounds like: ${phonetic.text}`;
+    }
+    return soundsLike.textContent = `No phonetics found!`;
+}
+
+    return soundsLike.textContent = `No phonetics found!`;
+
 }
 
 
