@@ -54,6 +54,22 @@ class BST{
         this.printTree(node.right);
     }
 
+	BFS(){
+        if(!this.root) return null;
+        let queue = [this.root];
+        let result = [];
+
+        while(queue.length){
+            const node = queue.shift();
+            result.push(node);
+
+            if(node.left) queue.push(node.left);
+            if(node.right) queue.push(node.right);
+        }
+
+        return result;
+
+    }
 }
 
 let tree = new BST();
@@ -72,5 +88,4 @@ tree.insert(1);
 tree.insert(35);
 tree.printTree();
 console.log(tree.has(13));
-
 
