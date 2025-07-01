@@ -1,3 +1,4 @@
+
 class Node{
     constructor(value){
         this.value = value;
@@ -88,4 +89,3 @@ tree.insert(1);
 tree.insert(35);
 tree.printTree();
 console.log(tree.has(13));
-
