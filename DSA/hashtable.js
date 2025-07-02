@@ -24,7 +24,7 @@ class HashMap {
 
     for(let pair of this.table[index]){
       if(pair[0] === key){
-        pair[1] === value;
+        pair[1] = value;
       }
     }
 
@@ -59,7 +59,7 @@ class HashMap {
 
   resize(newSize) {
     let oldTable = this.table;
-    this.table = new HashMap(newSize);
+    this.table = new Array(newSize);
 
     for(let bucket of oldTable){
       if(bucket){
