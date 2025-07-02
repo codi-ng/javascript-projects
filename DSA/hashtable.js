@@ -1,75 +1,129 @@
-class HashMap {
-  constructor(tableSize) {
+class HashMap{
+  constructor(tableSize){
     this.table = new Array(tableSize);
     this.tableSize = tableSize;
+    this.count = 0;
   }
 
-  hash(key) {
-    if (typeof key !== "string") String(key);
+  hash(key){
     let hashCode = 0;
 
-    for (let i = 0; i < key.length; i++) {
-      hashCode += (hashCode * 31 + key.charCodeAt(i)) % this.tableSize;
+    for(let i = 0; i < key.length; i++){
+      hashCode += (hashCode * 31 + key.charCodeAt(i)) % this.tableSize
     }
-
-    return hashCode;
+    return hashCode
   }
 
-  set(key, value) {
-    const index = this.hash(key);
-
-    if(!this.table[index]){
-      this.table[index] = [];
-    }
+  set(key, value){
+    let index = this.hash(key);
+    if(!this.table[index]) this.table[index] = [];
 
     for(let pair of this.table[index]){
       if(pair[0] === key){
         pair[1] = value;
+        return;
       }
     }
 
     this.table[index].push([key, value]);
+    this.count++;
   }
 
-  get(key) {
-    const index = this.hash(key);
+  get(key){
+    let index = this.hash(key);
     let bucket = this.table[index];
+
     if(!bucket) return undefined;
 
-    for(let pair of this.table[index]){
-      if(pair[0] === key) return pair[1]; 
+    
+    for(let pair of bucket){
+      if(pair[0] === key){
+        return pair[1];
+      }
+    }
+    
+    return undefined;
+  }
+  
+  has(key){
+    let index = this.hash(key);
+    let bucket = this.table[index];
+    if(!bucket) return false;
+
+    for(let pair of bucket){
+      if(pair[0] === key){
+        return true;
+      }
     }
 
     return false;
   }
-  remove(key) {
-    const index = this.hash(key);
-    const bucket = this.table[index];
+
+  remove(key){
+    let index = this.hash(key);
+    let bucket = this.table[index];
     if(!bucket) return undefined;
 
-    for(let i = 0; i < bucket.length; i++){
+    for(let i = 0; bucket.length; i++){
       if(bucket[i][0] === key){
         bucket.splice(i, 1);
         return;
       }
     }
 
-
+    return undefined;
+    
   }
 
-  resize(newSize) {
-    let oldTable = this.table;
-    this.table = new Array(newSize);
+  length(){
+    return this.count;
+  }
 
-    for(let bucket of oldTable){
+  clear(){
+    this.table = new Array(this.tableSize);
+    this.count = 0;
+  }
+
+  keys(){
+    let result = [];
+    for(let bucket of this.table){
       if(bucket){
-        for(let [key, value] of bucket){
-          this.set(key, value);
+        for(let pair of bucket){
+         if(pair[0]){
+            result.push(pair[0]);
+         } 
+        }
+      }
+    }
+
+    return result;
+  }
+
+  values(){
+    let result = [];
+
+    for(let bucket of this.table){
+      if(bucket){
+        for(let pair of bucket){
+          result.push(pair[1]);
+        }
+      }
+    }
+
+    return result;
+  }
+
+  entries(){
+    let result = [];
+    for(let bucket of this.table){
+      if(bucket){
+        for(let pair of bucket){
+          result.push(pair);
         }
       }
     }
 
 
+    return result;
   }
 }
-
