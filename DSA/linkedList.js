@@ -119,13 +119,3 @@ class linkedList{
 
   }
 }
-
-const list = new linkedList();
-
-list.insertFirst(1);
-list.insertFirst(2);
-list.insertFirst(3);
-list.insertLast(4);
-console.log(list.printList());
-console.log(list.getSize());
-console.log(list.at(3));
