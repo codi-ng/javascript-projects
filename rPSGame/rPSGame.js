@@ -12,25 +12,25 @@ if 3 computerChoice = 'paper' */
 let computerChoice = Math.ceil(Math.random() * 3);
 
 if (computerChoice === 1) {
-  computerChoice = "Rock";
+    computerChoice = 'Rock';
 } else if (computerChoice === 2) {
-  computerChoice = "Scissors";
+    computerChoice = 'Scissors';
 } else if (computerChoice === 3) {
-  computerChoice = "Paper";
+    computerChoice = 'Paper';
 }
 
 const getuserChoice = (userChoice) => {
-  if (userChoice === computerChoice) {
-    return "Tie!";
-  } else if (computerChoice === "Rock" && userChoice === "Scissors") {
-    return "You lose!";
-  } else if (computerChoice === "Scissors" && userChoice === "Paper") {
-    return "You lose!";
-  } else if (computerChoice === "Paper" && userChoice === "Rock") {
-    return "You lose!";
-  } else {
-    return "You win!";
-  }
+    if (userChoice === computerChoice) {
+        return 'Tie!';
+    } else if (computerChoice === 'Rock' && userChoice === 'Scissors') {
+        return 'You lose!';
+    } else if (computerChoice === 'Scissors' && userChoice === 'Paper') {
+        return 'You lose!';
+    } else if (computerChoice === 'Paper' && userChoice === 'Rock') {
+        return 'You lose!';
+    } else {
+        return 'You win!';
+    }
 };
 
 console.log(computerChoice);
@@ -39,4 +39,4 @@ console.log(computerChoice);
 "Paper" or
 "Scissors"(first letter uppercase)
 below in the quotes       ⬇   */
-console.log(getuserChoice("Rock"));
+console.log(getuserChoice('Rock'));
