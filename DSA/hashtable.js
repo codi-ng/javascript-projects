@@ -1,4 +1,4 @@
-class HashMap {
+export class HashMap {
     constructor(tableSize) {
         this.table = new Array(tableSize);
         this.tableSize = tableSize;
