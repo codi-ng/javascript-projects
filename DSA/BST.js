@@ -7,6 +7,7 @@ class Node {
 }
 
 
+
 export class BST {
     constructor() {
         this.root = null;
